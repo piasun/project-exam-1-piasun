@@ -39,3 +39,10 @@ a {
     padding: 10px 40px;
     border-radius: 5px;
   }
+
+  .small_cta {
+    padding: 10px 28px;
+    text-align: center;
+    text-transform: none;
+    font-weight: bold;
+  }

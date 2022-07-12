@@ -99,6 +99,12 @@ nav li span {
   display: block;
 }
 
+.divider {
+  border-top: 3px solid white;
+  border-radius: 5px;
+  margin: 20px;
+}
+
 /*footer*/
 
 footer {
