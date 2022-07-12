@@ -7,11 +7,12 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-color: #103444;
   font-family: var(--text-paragraph), sans-serif;
   font-size: 16px;
+  min-height: 100vh;
+  margin: 0px auto;
+  
 }
 
 .logo {
@@ -50,14 +51,10 @@ h3 {
 /*header*/
 
 header .logo {
-  color: #103444;
+  color: white;
   margin: 0px 0px 0px 120px;
   padding: 10px;
   font-weight: bold;
-}
-
-header {
-  border-bottom: 4px solid #103444;
 }
 
 nav {
