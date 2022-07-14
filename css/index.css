@@ -32,6 +32,11 @@
     max-width: 455px;
 }
 
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .statement {
     display: block;
     padding: 10px;
