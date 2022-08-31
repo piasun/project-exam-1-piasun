@@ -13,10 +13,10 @@ async function getBlogposts(url) {
     blogposts.forEach(function(blogpost){
         blogContainer.innerHTML += `
                 <article class="blogpost_card">
-                    <a href="blogpostspecific.html?id=${blogpost.id}" class="blogpost">
-                        <h3>${blogpost.title}</h3>
-                        <p>${blogpost.author.display_name}</p>
-                        <div class="cta"> Read article</div>
+                    <a href="blogpostspecific.html?id=${blogpost.content.rendered} class="blogpost_card">
+                        <h3>${blogpost.title.rendered}</h3>
+                        <p>${blogpost.excerpt.rendered}</p>
+                        <div class="cta"> Read more...</div>
                     </a>
                 </article>`
     
