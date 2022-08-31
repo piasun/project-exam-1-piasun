@@ -37,8 +37,8 @@ async function postDetails() {
 postDetails();
 
 function createDetailsHtml(article) {
-    articleContainer.innerHTML = `<img class="post-image" src="${article.content[0].src}" alt="${article.content[0].alt}">
-                                    <h1>${article.title}</h1>
+    articleContainer.innerHTML = `  <h1>${article.title}</h1>
+                                    <p>${article.author.name}</p>
                                     <h2>${article.excerpt}</h2>
                                     `;
 }

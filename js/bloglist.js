@@ -14,9 +14,8 @@ async function getBlogposts(url) {
         blogContainer.innerHTML += `
                 <article class="blogpost_card">
                     <a href="blogpostspecific.html?id=${blogpost.id}" class="blogpost">
-                        <img class="blogpost-image" src="${blogpost._links.featuredmedia[0]}">
                         <h3>${blogpost.title}</h3>
-                        <p>${blogpost.excerpt}</p>
+                        <p>${blogpost.author.display_name}</p>
                         <div class="cta"> Read article</div>
                     </a>
                 </article>`
