@@ -26,12 +26,6 @@
       padding: 10px 60px;
     }
 
-    .latest_news {
-      flex-direction: row;
-      align-items: stretch;
-      justify-content: center;
-    }
-
     .blog_item {
       width: 100%;
     }

@@ -13,7 +13,7 @@ a {
     text-transform: uppercase;
   }
   
-  .active, .cta,
+  .active,
   nav li a:hover {
     background: #5D157E;
     color: white;
@@ -32,9 +32,10 @@ a {
   }
 
   .cta {
-    background-color: white;
-    color: #5D157E;
+    background-color: #5D157E;
+    color: white;
     padding: 10px 28px;
+    border-radius: 5px;
     font-size: 1em;
     font-weight: bold;
     text-align: center;    
