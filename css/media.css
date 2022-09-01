@@ -36,4 +36,9 @@
       width: 100%;
     }
 
+    .blogposts-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
   }

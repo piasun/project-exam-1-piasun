@@ -37,8 +37,8 @@ async function postDetails() {
 postDetails();
 
 function createDetailsHtml(article) {
-    articleContainer.innerHTML = `  <h1>${article.title}</h1>
-                                    <p>${article.author.name}</p>
-                                    <h2>${article.excerpt}</h2>
+    articleContainer.innerHTML = `  <h1>${article.title.rendered}</h1>
+                                    <p>${article.author}</p>
+                                    <h2>${article.excerpt.rendered}</h2>
                                     `;
 }

@@ -1,11 +1,10 @@
 .blog_info {
-    display: block;
-    border: 3px solid white;
-    border-radius: 10px;
-    padding: 20px;
+    background-color: #5D157E;
+    padding: 30px;
     color: white;
     font-size: 1em;
     font-weight: bold;
+    text-align: center;
 }
 
 .container {
@@ -26,7 +25,7 @@
     opacity: 0.8;
     border-radius: 5px;
     padding: 10px;
-    color: #103444;
+    color: #5D157E;
     text-align: left;
     margin: 10px;
     max-width: 455px;
@@ -40,7 +39,7 @@ img {
 .statement {
     display: block;
     padding: 10px;
-    color: white;
+    color: #5D157E;
     font-size: 2em;
     font-style: italic;
     text-align: center;
