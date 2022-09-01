@@ -1,0 +1,44 @@
+
+@media (min-width: 800px) {
+    .menu-btn {
+      display: none;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+  
+    nav {
+      display: block;
+      position: static;
+      background: none;
+    }
+  
+    nav li {
+      display: inline-block;
+      padding: 10px;
+    }
+  
+    .cta {
+      padding: 10px 60px;
+    }
+
+    .latest_news {
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .blog_item {
+      width: 100%;
+    }
+
+    .blogposts-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+  }
