@@ -15,8 +15,7 @@ async function getBlogposts(url) {
                 <article class="blogpost_card">
                     <a href="blogpostspecific.html?id=${blogpost.id}" class="blogpost">
                         <h3>${blogpost.title.rendered}</h3>
-                        <p>${blogpost.excerpt.rendered}</p>
-                        <div class="cta"> Read more...</div>
+                        <img src="${blogpost.featured_media.url}" alt="${blogpost.featured_media.alt}" />
                     </a>
                 </article>`
     

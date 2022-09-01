@@ -23,10 +23,8 @@
 
   .blogposts-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    justify-content: center;
+    overflow: hidden;
   }
   
   .blogpost_card {
@@ -37,4 +35,30 @@
     height: max-content;
     text-align: center;
     padding: 10px;
+  }
+
+  .strength_main, .nutrition_main, .lifestyle_main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .strength_main img, .nutrition_main img, .lifestyle_main img {
+    width: 100%;
+  }
+
+  .strengt_info, .nutrition_info, .lifestyle_info {
+    padding: 20px;
+  }
+
+  .strengt_info {
+    background-color: #e1eea8;
+  }
+
+  .nutrition_info {
+    background-color: #fcd0d3;
+  }
+
+  .lifestyle_info {
+    background-color: #bff5f8;
   }
