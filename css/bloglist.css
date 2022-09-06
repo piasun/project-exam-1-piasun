@@ -19,3 +19,7 @@
     text-align: center;
     padding: 10px;
   }
+
+  .blogpost img{
+    width: 100%;
+  }

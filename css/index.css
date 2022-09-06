@@ -37,6 +37,10 @@
     padding: 10px;
   }
 
+  .blogpost img{
+    width: 100%;
+  }
+
   .strength_main, .nutrition_main, .lifestyle_main {
     display: flex;
     flex-direction: row;
