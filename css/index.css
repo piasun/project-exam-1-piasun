@@ -1,10 +1,35 @@
-.blog_info {
-    background-color: #5D157E;
-    padding: 30px;
+.main_intro {
+  background-image: url("../images/Caucasian\ girl\ exercising\ yoga\ in\ nature\ under\ warm\ sunlight-1.jpg");
+  background-repeat: no-repeat;
+  min-height: 770px;
+  width: 100%;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px;
+}
+
+.intro_text {
+    align-items: right;
+    background-color: var(--main);
+    opacity: 0.8;
+    margin: 0 5%;
+    padding: 15px;
+    max-width: 360px;
+    height: 170px;
+    border-radius: 6px;
     color: white;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
+    position: relative;
+    top: 350px;
+    z-index: 1;
+}
+
+.intro_text p {
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
 }
 
 .container {
@@ -12,33 +37,77 @@
     text-align: center;
 }
 
+h2 {
+  text-align: left;
+
+}
+
 .statement {
     display: block;
     padding: 10px;
-    color: #5D157E;
+    color: var(--main);
     font-size: 2em;
     font-style: italic;
     text-align: center;
   }
 
-  .blogposts-container {
+  .posts-container {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 20px;
   }
   
-  .blogpost_card {
-    background: white;
-    box-sizing: content-box;
-    margin: 20px;
-    width: 200px;
-    height: max-content;
-    text-align: center;
-    padding: 10px;
+  .slider {
+    --items-per-screen: 1;
+    --slider-index: 0;
+    display: flex;
+    transform: translateX(calc(var(--slider-index) * -100%));
+    margin: 0 0.25rem;
+    transition: transform 1s;
+    width: 90%;
+    }
+
+  .slider_layout {
+    height: 10rem;
+    min-width: 344px;
+    margin-right: 1rem;
+  } 
+
+  .card {
+    flex: 0 0 calc(100% / var(--items-per-screen));
+    max-width: calc(100% / var(--items-per-screen));
+    color:  var(--main);
+    padding: 8px;
   }
 
-  .blogpost img{
+  .card h3, .category {
+    text-align: left;
+    
+  }
+
+  .card, .card img {
     width: 100%;
+    height: auto;
+  }
+
+  .card img {
+    height: 10rem;
+    animation: fade-in-out 2s infinite;
+  }
+
+  .slider-buttons button {
+    border: none;
+    background-color: white;
+    color: var(--main);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .slider-buttons a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .strength_main, .nutrition_main, .lifestyle_main {

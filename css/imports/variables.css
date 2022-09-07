@@ -1,5 +1,10 @@
 :root {
+  /*fonts*/
     --text-paragraph: "Open Sans";
     --text-header: "Domine";
+
+  /*colors*/
+    --main:#5D157E;
+    
   }
   
