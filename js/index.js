@@ -32,7 +32,7 @@ async function getPosts(url) {
 
 getPosts(baseURL);
 
-//button actions
+//slider button actions
 
 prevButton.disabled = true;
 
