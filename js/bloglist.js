@@ -2,7 +2,7 @@ import { displayErrorMessage } from "../functions/errormessage.js";
 
 //call api
 
-let url = "http://localhost/re-yourself/wp-json/wp/v2/posts?filter%5Bposts_per_page%5D=20&page=1&_embed";
+let url = "https://orvoll.no/re-yourself/wp-json/wp/v2/posts?filter%5Bposts_per_page%5D=20&page=1&_embed";
 
 async function getArticles(url) {
     try {
