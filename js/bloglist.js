@@ -1,4 +1,4 @@
-
+import { displayErrorMessage } from "../functions/errormessage.js";
 
 //call api
 
@@ -20,13 +20,15 @@ async function getArticles(url) {
    
 }
 
+//create list of articles
+
 function articleList(article) {
     const articleContainer = document.querySelector(".articles");
     articleContainer.innerHTML="";
 
     for (let i = 0; i < article.length; i++) {
         if (i === 0 && i < 10)  {
-            articleContainer.innerHTML = `<article class="blogpost_card">
+            articleContainer.innerHTML = `<article class="card">
                                             <a href="blogpostspecific.html?id=${article[i].id}" class="blogpost">
                                                 <h3>${article[i].title.rendered}</h3>
                                                 <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" />
@@ -38,7 +40,7 @@ function articleList(article) {
                                             </div>
                                         </article>`
         } else if (i > 10 && i < article.length) {
-            articleContainer.innerHTML = `<article class="blogpost_card">
+            articleContainer.innerHTML = `<article class="card">
                                                 <a href="blogpostspecific.html?id=${article[i].id}" class="blogpost">
                                                     <h3>${article[i].title.rendered}</h3>
                                                     <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" />
@@ -55,12 +57,18 @@ function articleList(article) {
      }
 } 
 
+
 getArticles(url);
 
-function displayErrorMessage(htmlContainer) {
-    htmlContainer.innerHTML = `<div class="error-message">
-                                    <p>Oops looks like an error on our end</p>
-                                    <p>Please go back and try again</p>
-                                 </div>`;
-  }
+//load more posts
+const loadMorePosts = document.querySelector(".more-posts");
+loadMorePosts.addEventListener("click", () => {
+    const addArticles = document.querySelectorAll(".card");
+    addArticles.forEach((post) => {
+        post.classList.remove("hidden");
+    });
+    loadMorePosts.getElementsByClassName.display = "blocl";
+});
+
+
   

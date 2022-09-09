@@ -1,3 +1,8 @@
+.filter-category {
+  display: block;
+  padding: 20px;
+}
+
 .blogposts-container {
     display: flex;
     justify-content: space-evenly;
@@ -10,7 +15,7 @@
     background: none;
   }
   
-  .blogpost_card {
+  .card {
     background: white;
     box-sizing: content-box;
     margin: 20px;
@@ -18,8 +23,16 @@
     height: max-content;
     text-align: center;
     padding: 10px;
+    box-shadow: -3px 3px 6px var(--main);
   }
 
   .blogpost img{
     width: 100%;
+  }
+
+  .more-posts {
+    display: flex;
+    align-items: center;
+    border: none;
+    box-shadow: -3px 3px 6px var(--main);
   }

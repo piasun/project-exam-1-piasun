@@ -5,7 +5,7 @@ a {
   
   nav ul li a,
   footer a {
-    color: #5D157E;
+    color: var(--main);
     font-size: 16px;
     font-weight: bold;
     padding: 7px 13px;
@@ -15,7 +15,7 @@ a {
   
   .active,
   nav li a:hover {
-    background: #5D157E;
+    background: var(--main);
     color: white;
     transition: 0.5s;
     border-radius: 3px;
@@ -24,15 +24,15 @@ a {
   footer a {
     display: block;
     max-width: 100px;
-    color: #5D157E;
+    color: var(--main);
   }
   
   .footer_navigation a:hover {
-    border: #5D157E 1px solid;
+    border: var(--main) 1px solid;
   }
 
   .cta {
-    background-color: #5D157E;
+    background-color: var(--main);
     color: white;
     padding: 10px 28px;
     border-radius: 5px;

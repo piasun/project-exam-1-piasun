@@ -57,6 +57,8 @@ header .logo {
   font-weight: bold;
 }
 
+/*navigation*/
+
 nav {
   margin-left: 25px;
   display: none;
@@ -103,6 +105,16 @@ nav li span {
   border-top: 3px solid #5D157E;
   border-radius: 5px;
   margin: 20px;
+}
+
+.error-message {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  color: darkred;
+  font-size: 1.5rem;
+  font-weight: bold;
+
 }
 
 /*footer*/
