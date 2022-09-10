@@ -38,7 +38,12 @@ postDetails();
 
 function createDetailsHtml(article) {
     articleContainer.innerHTML = `  <h1>${article.title.rendered}</h1>
-                                    
-                                    <h2>${article.excerpt.rendered}</h2>
+                                    <p>by ${article.author}</p>
+                                    <div class="post_details">
+                                    <img ${article.featured_media}>
+                                    <p>${article.content.rendered}</p>
+                                    <div>#${article.categories}</div>
+                                    <div>#${article.categories}</div>
+                                    </div>
                                     `;
 }

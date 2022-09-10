@@ -14,6 +14,10 @@ body {
   
 }
 
+main  {
+  border-top: 3px solid var(--main);
+}
+
 h1,
 h2 {
   font-family: var(--text-header), serif;
@@ -36,7 +40,7 @@ h3 {
 
 .loading {
   border: 20px solid white;
-  border-top: 20px solid #5D157E;
+  border-top: 20px solid var(--main);
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -69,7 +73,7 @@ nav {
   right: 0px;
   text-align: center;
   background: white;
-  color: #5D157E;
+  color: var(--main);
 }
 
 nav ul {
@@ -121,7 +125,8 @@ nav li span {
 footer {
   display: block;
   background-color: white;
-  color: #5D157E;
+  color: var(--main);
+  border-top: 3px solid var(--main);
 }
 
 footer .logo{

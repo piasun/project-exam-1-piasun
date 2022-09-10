@@ -1,0 +1,27 @@
+.main-post {
+    display: block;
+    margin: 1rem;
+}
+
+.return {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: left;
+}
+
+.post_details {
+    display: block;
+    padding: 3rem;
+    color: var(--main);
+
+}
+
+.post_details img {
+
+}
+
+.post_details p, ul, ol {
+    
+}
