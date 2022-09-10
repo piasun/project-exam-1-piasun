@@ -7,7 +7,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "https://orvoll.no/re-yourself/wp-json/wp/v2/posts/" +id;
+const url = `https://orvoll.no/re-yourself/wp-json/wp/v2/posts/${id}`;
 
 
 async function postDetails() {

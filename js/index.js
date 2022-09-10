@@ -4,7 +4,7 @@ const prevButton = document.querySelector(".previous");
 const nextButton = document.querySelector(".next");
 
 //call api
-const baseURL = "https://orvoll.no/re-yourself/wp-json/wp/v2/posts?_embed";
+const baseURL = "https://orvoll.no/re-yourself/wp-json/wp/v2/posts?per_page=12&_embed";
 
 
 async function getPosts(url) {

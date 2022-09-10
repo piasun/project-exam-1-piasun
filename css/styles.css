@@ -14,11 +14,6 @@ body {
   
 }
 
-.logo {
-    font-family: var(--text-header), serif;
-    font-size: 40px;
-}
-
 h1,
 h2 {
   font-family: var(--text-header), serif;
@@ -49,15 +44,20 @@ h3 {
 }
 
 /*header*/
+header{
+  display: block;
+  margin: 20px;
+  min-height: 50px;
+}
 
-
-header .logo {
-  color: #5D157E;
-  margin: 30px;
+.logo {
+  font-family: var(--text-header), serif;
+  font-size: 30px;
+  color: var(--main);
   font-weight: bold;
 }
 
-/*navigation*/
+/*header navigation*/
 
 nav {
   margin-left: 25px;
@@ -92,9 +92,9 @@ nav li span {
 .menu-btn {
   font-size: 30px;
   float: right;
-  margin: 30px;
+  margin: 0 30px;
   cursor: pointer;
-  color: #5D157E;
+  color: var(--main);
 }
 
 #menu-icon:checked ~ nav {
@@ -102,7 +102,7 @@ nav li span {
 }
 
 .divider {
-  border-top: 3px solid #5D157E;
+  border-top: 3px solid var(--main);
   border-radius: 5px;
   margin: 20px;
 }
