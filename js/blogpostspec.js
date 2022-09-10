@@ -7,7 +7,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = `https://orvoll.no/re-yourself/wp-json/wp/v2/posts/${id}`;
+const url = `https://orvoll.no/re-yourself/wp-json/wp/v2/posts/${id}?_embed`;
 
 
 async function postDetails() {
@@ -38,12 +38,12 @@ postDetails();
 
 function createDetailsHtml(article) {
     articleContainer.innerHTML = `  <h1>${article.title.rendered}</h1>
-                                    <p>by ${article.author}</p>
+                                    <p>by ${article._embedded.author[0].name}</p>
                                     <div class="post_details">
-                                    <img ${article.featured_media}>
+                                    <img src="${article._embedded['wp:featuredmedia'][0].source_url}" />
                                     <p>${article.content.rendered}</p>
-                                    <div>#${article.categories}</div>
-                                    <div>#${article.categories}</div>
+                                    <div>#${article._embedded['wp:term'][0][0].slug}</div>
+                                    <div>#${article._embedded['wp:term'][0][1].slug}</div>
                                     </div>
                                     `;
 }

@@ -1,3 +1,4 @@
+import { filterByCategory } from "../functions/filterByCategory.js";
 import { articleList } from "../functions/listOfArticles.js";
 import { displayErrorMessage } from "../functions/errormessage.js";
 
@@ -16,6 +17,9 @@ async function getArticles() {
         console.log(article);
 
         articleList(article);
+
+        //Filetered by Category
+        filterByCategory(article);
 
 
     } catch (error) {

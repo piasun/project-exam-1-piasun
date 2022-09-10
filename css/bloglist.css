@@ -1,6 +1,7 @@
-.filter-category {
+.filter-category, .search {
   display: block;
   padding: 20px;
+  color: var(--main);
 }
 
 .blog_container {
