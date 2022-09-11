@@ -1,7 +1,13 @@
-.category_container, .search {
+.category_container, .search, .search-input {
   display: block;
   padding: 20px;
   color: var(--main);
+}
+
+.search-button{
+  background-color: white;
+  color: var(--main);
+  border-color: var(--main);
 }
 
 .blog_container {

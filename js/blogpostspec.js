@@ -44,7 +44,7 @@ postDetails();
 function createDetailsHtml(article) {
     articleContainer.innerHTML = `  <h1>${article.title.rendered}</h1>
                                     <p>by ${article._embedded.author[0].name}</p>
-                                    <div class="post_details">
+                                    <div class="post_details shortenedText">
                                     <img src="${article._embedded['wp:featuredmedia'][0].source_url}" alt="${article._embedded['wp:featuredmedia'][0].alt_text}" />
                                     <p>${article.content.rendered}</p>
                                     <div class="divider">
@@ -57,6 +57,3 @@ function createDetailsHtml(article) {
                               
 
     }
-
-
-
