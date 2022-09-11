@@ -54,6 +54,31 @@ function createDetailsHtml(article) {
                                     </div>
                                     `;
 
+                                    
+const popupImage = document.querySelectorAll();
+popupImage.forEach((image) => {
+    image.addEventListener("click",  () => {
+        resizedImage(image);
+    });
+    overlay.addEventListener("click",  () => {
+        hideoOverlay(image);
+    });
+});
+
+function resizedImage(bigimage) {
+    bigimage.classList.add("fullscreen-img")
+    modal.style.overflow = "hidden";
+    overlay.classList.remove("hidden");
+    }
+
+    function resizedImage(bigimage) {
+    bigimage.classList.remove("fullscreen-img");
+    overlay.classList.add("hidden");
+    modal.style.overflow = "auto";
+    }                                
+
 
     }
+
+
 
