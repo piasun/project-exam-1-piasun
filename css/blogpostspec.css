@@ -13,11 +13,35 @@ h1 {
 
 .post_details {
     display: block;
-    padding: 3rem;
+    padding: 0.5rem;
     color: var(--main);
 
 }
 
 .post_details img {
     width: 100%;
+}
+
+
+.fullscreen-img {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px var(--main);
+    width: 600px;
+    max-width: 100%;
+}
+
+.background {
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hidden {
+    display: none;
 }

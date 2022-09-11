@@ -19,7 +19,7 @@ async function getPosts(url) {
                 <article class="card">
                     <a href="blogpostspecific.html?id=${post.id}" class="blogpost">
                         <h3>${post.title.rendered}</h3>
-                        <img src="${post._embedded['wp:featuredmedia'][0].source_url}" />
+                        <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="${post._embedded['wp:featuredmedia'][0].alt_text}" />
                     </a>
                     <div class="category">
                         <span>#${post._embedded['wp:term'][0][0].slug}</span>

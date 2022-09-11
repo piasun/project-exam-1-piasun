@@ -13,7 +13,7 @@ loadMorePosts.style.display = "block";
                 articleContainer.innerHTML += `<article class="card">
                                                 <a href="blogpostspecific.html?id=${article[i].id}" class="blogpost">
                                                     <h3>${article[i].title.rendered}</h3>
-                                                    <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" />
+                                                    <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" alt="${article._embedded['wp:featuredmedia'][0].alt_text}" />
                                                 </a>
                                                 <p class="author">by ${article[i]._embedded.author[0].name}</p>
                                                 <div class="category">
@@ -25,7 +25,7 @@ loadMorePosts.style.display = "block";
             articleContainer.innerHTML += `<article class="card">
                                             <a href="blogpostspecific.html?id=${article[i].id}" class="blogpost">
                                                 <h3>${article[i].title.rendered}</h3>
-                                                <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" />
+                                                <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" alt="${article._embedded['wp:featuredmedia'][0].alt_text}" />
                                             </a>
                                             <p class="author">by ${article[i]._embedded.author[0].name}</p>
                                             <div class="category">
@@ -33,20 +33,20 @@ loadMorePosts.style.display = "block";
                                                 <div>#${article[i]._embedded['wp:term'][0][1].slug}</div>
                                             </div>
                                         </article>`
-        } else if (i > 10 && i < article.length) {
-            articleContainer.innerHTML += `<article class="card hidden">
-                                                <a href="blogpostspecific.html?id=${article[i].id}" class="blogpost">
-                                                    <h3>${article[i].title.rendered}</h3>
-                                                    <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" />
-                                                </a>
-                                                <p class="author">by ${article[i]._embedded.author[0].name}</p>
-                                                <div class="category">
-                                                    <div>#${article[i]._embedded['wp:term'][0][0].slug}</div>
-                                                    <div>#${article[i]._embedded['wp:term'][0][1].slug}</div>
-                                                </div>
-                                            </article>`
+            } else if (i > 10 && i < article.length) {
+                articleContainer.innerHTML += `<article class="card hidden">
+                                                    <a href="blogpostspecific.html?id=${article[i].id}" class="blogpost">
+                                                        <h3>${article[i].title.rendered}</h3>
+                                                        <img src="${article[i]._embedded['wp:featuredmedia'][0].source_url}" alt="${article._embedded['wp:featuredmedia'][0].alt_text}" />
+                                                    </a>
+                                                    <p class="author">by ${article[i]._embedded.author[0].name}</p>
+                                                    <div class="category">
+                                                        <div>#${article[i]._embedded['wp:term'][0][0].slug}</div>
+                                                        <div>#${article[i]._embedded['wp:term'][0][1].slug}</div>
+                                                    </div>
+                                                </article>`
 
-        }
+            }
 
      }
 } 
