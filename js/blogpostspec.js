@@ -12,7 +12,7 @@ const url = `https://orvoll.no/re-yourself/wp-json/wp/v2/posts/${id}?_embed`;
 
 //image modal
 const overlay= document.querySelector("body");
-const modal = document.querySelector(".modal-container");
+const modal = document.querySelector(".modal");
 
 
 async function postDetails() {
@@ -57,3 +57,19 @@ function createDetailsHtml(article) {
                               
 
     }
+
+
+    window.addEventListener('click', function (e) {
+        
+        let img = e.target.src;
+        console.log(img);
+        if (img) {
+            modal.innerHTML = `
+            <img src="${img}">`
+    
+            modal.classList.toggle("modalVisible");
+        }
+        if (e.target === modal) {
+            modal.classList.toggle("modalVisible");
+        }
+    });
