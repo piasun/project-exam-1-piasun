@@ -11,7 +11,6 @@ console.log(id);
 const url = `https://orvoll.no/re-yourself/wp-json/wp/v2/posts/${id}?_embed`;
 
 //image modal
-const overlay= document.querySelector("body");
 const modal = document.querySelector(".modal");
 
 
