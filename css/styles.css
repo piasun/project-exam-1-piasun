@@ -44,7 +44,7 @@ h3 {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 2s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 /*header*/
@@ -103,6 +103,15 @@ nav li span {
 
 #menu-icon:checked ~ nav {
   display: block;
+}
+
+.main-intro {
+  background-repeat: no-repeat;
+  min-height: 770px;
+  width: 100%;
+  background-size: cover;
+  background-position: -155px;
+  border-bottom: 4px solid #103444;
 }
 
 .divider {

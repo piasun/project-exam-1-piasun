@@ -8,7 +8,7 @@ loadMorePosts.style.display = "none";
 
 //call api
 
-let url = "https://orvoll.no/re-yourself/wp-json/wp/v2/posts?per_page=12&_embed";
+let url = "https://orvoll.no/re-yourself/wp-json/wp/v2/posts?per_page=15&_embed";
 
 async function getArticles() {
     try {

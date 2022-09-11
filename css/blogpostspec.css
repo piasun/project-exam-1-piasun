@@ -31,7 +31,7 @@ h1 {
     max-width: 100%;
 }
 
-.background {
+.modal-container {
     background-color: white;
     display: flex;
     align-items: center;
@@ -41,8 +41,4 @@ h1 {
     left: 0;
     height: 100vh;
     width: 100vw;
-}
-
-.hidden {
-    display: none;
 }

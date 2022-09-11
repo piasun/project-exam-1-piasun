@@ -1,0 +1,30 @@
+.about_cover {
+    background-image: url("/images/Man\ in\ sunset-1.jpg");
+    background-repeat: no-repeat;
+    min-height: 770px;
+    width: 100%;
+    background-size: cover;
+  }
+  
+  .about-text {
+    align-items: right;
+    background-color: var(--main);
+    opacity: 0.8;
+    margin: 0 5%;
+    padding: 15px;
+    max-width: 360px;
+    height: 400px;
+    border-radius: 6px;
+    color: white;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+  }
+
+  h1, h2 {
+    color: white;
+  }
+  
+  p {
+    text-align: center;
+  }

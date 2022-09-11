@@ -1,4 +1,4 @@
-.filter-category, .search {
+.category_container, .search {
   display: block;
   padding: 20px;
   color: var(--main);
