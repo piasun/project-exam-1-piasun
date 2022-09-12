@@ -1,3 +1,4 @@
+//dom elements
 const form = document.querySelector("#contact-form");
 const fullName = document.querySelector("#fullName");
 const fullNameError = document.querySelector("#fullNameError");
@@ -7,6 +8,8 @@ const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#messageError");
+
+//validate form
 
 function validateForm() {
     event.preventDefault();
