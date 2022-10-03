@@ -1,4 +1,4 @@
-# Project Exam 1 - RE - yourself
+# Project Exam 1: RE - yourself
 
 ![RE_website](https://user-images.githubusercontent.com/77275966/193541644-65d31b29-33a4-4a2d-a2e5-052ff99e11ca.PNG)
 
